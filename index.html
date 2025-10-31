@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    var s = prompt("Please enter a sentence:");
+    var w = s.split(" "); 
+    var wc = w.length;
+    var wr = prompt("Enter the word you want to replace:");
+    var rw = prompt("Enter the word to replace it with:");
+    var ns = s.replace(wr, rw); 
+    var ss = prompt("Enter a substring to check:");
+    var cs = s.includes(ss);
+    alert("Sentence: " + s + "\n" + "Word count: " + wc + "\n" + "New sentence: " + ns + "\n" + "Contains substring? " + cs);
+  </script>
+</html>
